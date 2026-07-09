@@ -1,0 +1,6 @@
+{
+  "name": "Mizuhara Business Console",
+  "description": "An outbound voice sales console powered by Gemini Live and SIP Telephony adapters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

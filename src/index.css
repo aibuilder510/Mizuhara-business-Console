@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Premium Boutique Color Tokens */
+  --color-linen: #F7F2E9;       /* Background: Warm Linen */
+  --color-paper: #FFFDF8;       /* Card Surface: Ivory Paper */
+  --color-plum: #5B3A6B;        /* Primary Accent: Deep Plum */
+  --color-verdant: #3F6B4A;     /* Success: Verdant Moss */
+  --color-gold: #B8863B;        /* Warning: Antique Gold */
+  --color-warmgrey: #9C948A;    /* Muted: Warm Grey */
+  --color-charcoal: #2B2620;    /* Primary Text: Ink Charcoal */
+  --color-taupe: #7A7267;       /* Secondary Text / Caption: Taupe */
+  --color-border-custom: #E5DFD5; /* 1px hairline border */
+}
+
+body {
+  background-color: var(--color-linen);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar Styles for light editorial theme */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--color-border-custom);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--color-taupe);
+}
